@@ -68,3 +68,14 @@ git push -u origin main
 
 docker compose -f docker-compose.mysql.yml up -d --build
 # เปิดเว็บที่ http://localhost:8000
+
+
+# สตาร์ทคอนเทนเนอร์
+
+docker compose up -d
+
+# ดูสถานะ/ล็อกถ้าจำเป็น
+
+docker compose ps
+
+docker compose logs -f
