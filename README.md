@@ -79,3 +79,14 @@ docker compose up -d
 docker compose ps
 
 docker compose logs -f
+
+
+ครั้งแรกหลัง clone หรือเปลี่ยน schema ใหญ่
+
+ทำแค่ครั้งแรก (หรือเมื่อเปลี่ยนโครงสร้าง DB)
+
+docker compose run --rm web python manage.py migrate
+
+docker compose run --rm web python manage.py createsuperuser
+
+docker compose run --rm web python manage.py collectstatic --noinput
