@@ -65,3 +65,6 @@ git branch -M main
 git remote add origin https://github.com/iivixw/MyProject-UBORROWU.git
 
 git push -u origin main
+
+docker compose -f docker-compose.mysql.yml up -d --build
+# เปิดเว็บที่ http://localhost:8000
